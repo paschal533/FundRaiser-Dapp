@@ -1,6 +1,6 @@
 pragma solidity >0.4.23 <0.7.0;
 
-import "openzeppelin-solidity/contracts/access/Ownable.sol";
+import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
 contract Fundraiser is Ownable {
   string public name;
