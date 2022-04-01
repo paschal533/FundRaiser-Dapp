@@ -1,4 +1,4 @@
-pragma solidity >0.4.23 <0.7.0;
+pragma solidity ^0.8.0;
 
 import "openzeppelin-solidity/contracts/access/Ownable.sol";
 
