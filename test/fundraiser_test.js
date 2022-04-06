@@ -91,7 +91,7 @@ contract("Fundraiser", accounts => {
       const {values, dates} = await fundraiser.myDonations({from: donor});
 
       assert.equal(value, values[0], "values should match");
-      assert(dates[0], "date should present");
+      assert(dates[0], "date should be present");
     })
   })
 });
