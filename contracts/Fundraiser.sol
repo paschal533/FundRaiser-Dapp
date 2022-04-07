@@ -86,7 +86,7 @@ contract Fundraiser is Ownable {
     uint balance = address(this).balance;
     beneficiary.transfer(balance);
 
-    //emit Withdraw(balance);
+    emit Withdraw(balance);
   }
 
   receive() external payable {
