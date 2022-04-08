@@ -98,7 +98,7 @@ contract("FundraiserFactory: fundraiser", (accounts) => {
         })
 
         it("returns 10 results when limit requested is 10", async () => {
-            //const fundraisers = await factory.fundraisers(10, 0);
+            const fundraisers = await factory.fundraisers(10, 0);
             assert.equal(
                 fundraisers.length,
                 10,
