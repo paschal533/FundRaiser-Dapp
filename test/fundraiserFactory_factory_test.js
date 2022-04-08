@@ -93,7 +93,7 @@ contract("FundraiserFactory: fundraiser", (accounts) => {
 
     describe("varying limits", async () => {
         let factory;
-        //beforeEach(async () => {
+        beforeEach(async () => {
             factory = await createFundraiserFactory(30, accounts);
         })
 
