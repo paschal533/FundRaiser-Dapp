@@ -5,7 +5,7 @@ import "openzeppelin-solidity/contracts/access/Ownable.sol";
 import "openzeppelin-solidity/contracts/utils/math/SafeMath.sol";
 
 contract Fundraiser is Ownable {
-  using SafeMath for uint256;
+  //using SafeMath for uint256;
 
   struct Donation {
     uint256 value;
