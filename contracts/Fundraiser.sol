@@ -12,7 +12,7 @@ contract Fundraiser is Ownable {
     //uint256 conversionFactor;
     uint256 date;
   }
-  mapping(address => Donation[]) private _donations;
+  //mapping(address => Donation[]) private _donations;
 
   event DonationReceived(address indexed donor, uint256 value);
   event Withdraw(uint256 amount);
