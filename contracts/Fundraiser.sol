@@ -10,7 +10,7 @@ contract Fundraiser is Ownable {
   struct Donation {
     uint256 value;
     //uint256 conversionFactor;
-    //uint256 date;
+    uint256 date;
   }
   mapping(address => Donation[]) private _donations;
 
