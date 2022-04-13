@@ -173,7 +173,7 @@ contract("FundraiserFactory: fundraiser", (accounts) => {
                     "collection adjusted"
                 );
             } catch(err) {
-                assert.fail("limit and offset exceeded bounds");
+                assert.fail("limit and offset bounds");
             }
         })
     })
