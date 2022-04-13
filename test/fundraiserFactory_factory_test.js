@@ -170,7 +170,7 @@ contract("FundraiserFactory: fundraiser", (accounts) => {
                 assert.equal(
                     fundraisers.length,
                     5,
-                    "collection "
+                    "collection adjusted"
                 );
             } catch(err) {
                 assert.fail("limit and offset exceeded bounds");
