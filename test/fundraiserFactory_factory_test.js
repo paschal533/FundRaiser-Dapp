@@ -164,7 +164,7 @@ contract("FundraiserFactory: fundraiser", (accounts) => {
             }
         });
 
-        it("adjusts return size to prevent out of bounds error", async () => {
+        it("adjusts return size to prevent out of bounds ", async () => {
             try{
                 const fundraisers = await factory.fundraisers(10, 5);
                 assert.equal(
