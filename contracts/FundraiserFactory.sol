@@ -8,6 +8,8 @@ contract FundraiserFactory {
 
   event FundraiserCreated(Fundraiser indexed fundraiser, address indexed owner);
 
+  uint256 constant maxLimit = 20;
+
   function createFundraiser(
     string memory name,
     string memory url,
@@ -38,8 +40,16 @@ contract FundraiserFactory {
     view
     returns(Fundraiser[] memory coll)
   {
-    uint256 size = fundraisersCount() < limit ? fundraisersCount() : limit;
+    require(offset <= fundraisersCount(), "offset out of bounds");
+    uint256 size = fundraisersCount() - offset;
+    // size should not exceed the maxLimit
+    size = size < limit ? size : limit;
+    size = size < maxLimit ? size : maxLimit;
     coll = new Fundraiser[](size);
+
+    for(uint256 i = 0; i < size; i++) {
+      coll[i] = _fundraisers[offset + i];
+    }
     
     return coll;
   }
