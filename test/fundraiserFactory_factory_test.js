@@ -157,7 +157,7 @@ contract("FundraiserFactory: fundraiser", (accounts) => {
         it("raises out of bounds error", async () => {
             try {
                 await factory.fundraisers(1, 11);
-                assert.fail("error was not  ");
+                assert.fail("error was not raised");
             } catch(err) {
                 const expected = "offset out of bounds";
                 assert.ok(err.message.includes(expected), `${err.message}`);
