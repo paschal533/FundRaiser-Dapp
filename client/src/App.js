@@ -65,7 +65,7 @@ const App = () => {
            <Typography variant="h6" color="inherit">
              <NavLink className="nav-link" to="/">Home</NavLink>
            </Typography>
-           <NavLink className="nav-link" to="/new/"></NavLink>
+           <NavLink className="nav-link" to="/new/">New</NavLink>
           </Toolbar>
        </AppBar>
         <Routes>
