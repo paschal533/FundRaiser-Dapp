@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-do
 
 import NewFundraiser from './NewFundraiser'
 import Home from './Home'
-import Receipts from './Receipts'
+//import Receipts from './Receipts'
 
 import "./App.css";
 
