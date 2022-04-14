@@ -71,7 +71,7 @@ const App = () => {
         <Routes>
           <Route path="/" exact component={Home} />
           <Route path="/new/" component={NewFundraiser} />
-        {/*<Route path="/receipts" component={Receipts} />*/}
+          <Route path="/receipts" component={Receipts} />
         </Routes>
       </Router>
     </div>
