@@ -72,7 +72,6 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/new/" component={NewFundraiser} />
         {/*<Route path="/receipts" component={Receipts} />*/}
-        {NewFundraiser}
         </Routes>
       </Router>
     </div>
