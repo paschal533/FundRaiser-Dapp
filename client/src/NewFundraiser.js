@@ -110,7 +110,7 @@ const handleSubmit = async () => {
 
       <label>Description</label>
       <TextField
-        id="outlined-bare"
+        //id="outlined-bare"
         className={classes.textField}
         placeholder="Fundraiser Description"
         margin="normal"
