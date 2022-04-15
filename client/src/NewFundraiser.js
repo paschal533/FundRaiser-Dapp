@@ -113,7 +113,7 @@ const handleSubmit = async () => {
         id="outlined-bare"
         className={classes.textField}
         placeholder="Fundraiser Description"
-       // margin="normal"
+        margin="normal"
         onChange={(e) => setFundraiserDescription(e.target.value)}
         variant="outlined"
         inputProps={{ 'aria-label': 'bare' }}
