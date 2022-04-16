@@ -67,7 +67,7 @@ const useStyles = makeStyles(theme => ({
 const FundraiserCard = (props) => {
   const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'))
 
-  const [ contract, setContract] = useState(null)
+  //const [ contract, setContract] = useState(null)
   const [ accounts, setAccounts ] = useState(null)
   const [ fund, setFundraiser ] = useState(null)
   const [ fundName, setFundname ] = useState(null)
