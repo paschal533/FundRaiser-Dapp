@@ -69,7 +69,7 @@ const FundraiserCard = (props) => {
 
   const [ contract, setContract] = useState(null)
   const [ accounts, setAccounts ] = useState(null)
- // const [ fund, setFundraiser ] = useState(null)
+  const [ fund, setFundraiser ] = useState(null)
   const [ fundName, setFundname ] = useState(null)
   const [ description, setDescription ] = useState(null)
   const [ totalDonations, setTotalDonations ] = useState(null)
