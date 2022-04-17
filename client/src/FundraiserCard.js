@@ -113,7 +113,7 @@ const FundraiserCard = (props) => {
       const totalDonations = await instance.methods.totalDonations().call()
       const imageURL = await instance.methods.imageURL().call()
       const url = await instance.methods.url().call()
-      
+
       //const exchangeRate = await cc.price('ETH', ['USD'])
       const exchangeRate =  10
       setExchangeRate(exchangeRate.USD)
@@ -158,7 +158,7 @@ const FundraiserCard = (props) => {
   };
 
   const submitFunds = async () => {
-    const fundraisercontract = contract
+    //const fundraisercontract = contract
     const ethRate = exchangeRate
     const ethTotal = donationAmount / ethRate
     const donation = web3.utils.toWei(ethTotal.toString())
