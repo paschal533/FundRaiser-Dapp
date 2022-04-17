@@ -26,7 +26,7 @@ import Web3 from 'web3'
 
 import { Link } from 'react-router-dom'
 
-//const cc = require('cryptocompare')
+const cc = require('cryptocompare')
 
 const getModalStyle =() => {
   const top = 50;
@@ -113,7 +113,8 @@ const FundraiserCard = (props) => {
       const totalDonations = await instance.methods.totalDonations().call()
       const imageURL = await instance.methods.imageURL().call()
       const url = await instance.methods.url().call()
-
+      
+      //const exchangeRate = await cc.price('ETH', ['USD'])
       const exchangeRate =  10
       setExchangeRate(exchangeRate.USD)
       const eth = web3.utils.fromWei(totalDonations, 'ether')
