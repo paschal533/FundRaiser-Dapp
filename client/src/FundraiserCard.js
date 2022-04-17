@@ -161,7 +161,7 @@ const FundraiserCard = (props) => {
     const fundraisercontract = contract
     const ethRate = exchangeRate
     const ethTotal = donationAmount / ethRate
-    //const donation = web3.utils.toWei(ethTotal.toString())
+    const donation = web3.utils.toWei(ethTotal.toString())
 
     await contract.methods.donate().send({
       from: accounts[0],
