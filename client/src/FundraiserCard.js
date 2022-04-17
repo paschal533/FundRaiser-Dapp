@@ -99,7 +99,7 @@ const FundraiserCard = (props) => {
       const fund = fundraiser
       const networkId = await web3.eth.net.getId();
       const deployedNetwork = FundraiserContract.networks[networkId];
-      //const accounts = await web3.eth.getAccounts();
+      const accounts = await web3.eth.getAccounts();
       const instance = new web3.eth.Contract(
         FundraiserContract.abi,
         fund
