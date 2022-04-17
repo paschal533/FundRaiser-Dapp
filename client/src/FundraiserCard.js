@@ -158,7 +158,7 @@ const FundraiserCard = (props) => {
   };
 
   const submitFunds = async () => {
-    //const fundraisercontract = contract
+    const fundraisercontract = contract
     const ethRate = exchangeRate
     const ethTotal = donationAmount / ethRate
     const donation = web3.utils.toWei(ethTotal.toString())
