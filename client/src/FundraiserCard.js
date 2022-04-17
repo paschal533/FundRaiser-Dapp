@@ -94,7 +94,7 @@ const FundraiserCard = (props) => {
     }
   }, [fundraiser]);
 
-  //const init = async (fundraiser) => {
+  const init = async (fundraiser) => {
     try {
       const fund = fundraiser
       const networkId = await web3.eth.net.getId();
