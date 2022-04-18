@@ -209,7 +209,7 @@ const FundraiserCard = (props) => {
   }
 
   const setBeneficiary = async () => {
-    //await contract.methods.setBeneficiary(beneficiary).send({
+    await contract.methods.setBeneficiary(beneficiary).send({
       from: accounts[0],
     })
 
