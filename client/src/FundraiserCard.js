@@ -205,7 +205,7 @@ const FundraiserCard = (props) => {
       from: accounts[0],
     })
 
-    //alert('Funds Withdrawn!')
+    alert('Funds Withdrawn!')
   }
 
   const setBeneficiary = async () => {
