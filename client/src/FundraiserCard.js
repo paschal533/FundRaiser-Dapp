@@ -202,7 +202,7 @@ const FundraiserCard = (props) => {
 
   const withdrawalFunds = async () => {
     await contract.methods.withdraw().send({
-      //from: accounts[0],
+      from: accounts[0],
     })
 
     alert('Funds Withdrawn!')
