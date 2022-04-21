@@ -134,7 +134,7 @@ const FundraiserCard = (props) => {
       const isOwner = await instance.methods.owner().call()
 
       if (isOwner === accounts[0]) {
-        setIsOwner(true)
+        //setIsOwner(true)
       }
     }
     catch(error) {
