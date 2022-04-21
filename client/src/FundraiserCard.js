@@ -141,7 +141,7 @@ const FundraiserCard = (props) => {
       alert(
         `Failed to load web3, accounts, or contract. Check console for details.`,
       );
-      //console.error(error);
+      console.error(error);
     }
   }
 
