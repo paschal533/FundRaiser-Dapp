@@ -153,7 +153,7 @@ const FundraiserCard = (props) => {
     setOpen(true);
   };
 
-  //const handleClose = () => {
+  const handleClose = () => {
     setOpen(false);
   };
 
