@@ -154,7 +154,7 @@ const FundraiserCard = (props) => {
   };
 
   const handleClose = () => {
-    setOpen(false);
+    //setOpen(false);
   };
 
   const submitFunds = async () => {
