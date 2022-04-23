@@ -149,7 +149,7 @@ const FundraiserCard = (props) => {
     window.location.reload()
   })
 
-  const handleOpen = () => {
+  //const handleOpen = () => {
     setOpen(true);
   };
 
