@@ -146,7 +146,7 @@ const FundraiserCard = (props) => {
   }
 
   window.ethereum.on('accountsChanged', function (accounts) {
-    //window.location.reload()
+    window.location.reload()
   })
 
   const handleOpen = () => {
