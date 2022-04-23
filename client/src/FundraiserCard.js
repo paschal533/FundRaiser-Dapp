@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
   },
   formControl: {
     margin: theme.spacing(1),
-    display: 'table-cell'
+    //display: 'table-cell'
   },
   card: {
     maxWidth: 450,
