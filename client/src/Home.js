@@ -34,7 +34,7 @@ const Home = () => {
         FactoryContract.abi,
         deployedNetwork && deployedNetwork.address,
       );
-      setContract(instance)
+      //setContract(instance)
       setAccounts(accounts)
 
       const funds = await instance.methods.fundraisers(10, 0).call()
