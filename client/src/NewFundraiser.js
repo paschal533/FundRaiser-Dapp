@@ -37,7 +37,7 @@ useEffect(() => {
       const web3 = await getWeb3();
       const networkId = await web3.eth.net.getId();
       const deployedNetwork = FactoryContract.networks[networkId];
-      ///const accounts = await web3.eth.getAccounts();
+      const accounts = await web3.eth.getAccounts();
       const instance = new web3.eth.Contract(
         FactoryContract.abi,
         deployedNetwork && deployedNetwork.address,
