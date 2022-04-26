@@ -21,7 +21,7 @@ const getWeb3 = () =>
         // Use Mist/MetaMask's provider.
         const web3 = window.web3;
         console.log("Injected web3 detected.");
-        //resolve(web3);
+        resolve(web3);
       }
       // Fallback to localhost; use dev console port by default...
       else {
