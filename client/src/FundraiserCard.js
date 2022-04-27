@@ -109,7 +109,7 @@ const FundraiserCard = (props) => {
       console.log(fund)
 
       const name = await instance.methods.name().call()
-      const description = await instance.methods.description().call()
+      //const description = await instance.methods.description().call()
       const totalDonations = await instance.methods.totalDonations().call()
       const imageURL = await instance.methods.imageURL().call()
       const url = await instance.methods.url().call()
