@@ -106,7 +106,7 @@ const FundraiserCard = (props) => {
       );
       setContract(instance)
       setAccounts(accounts)
-      console.log(fund)
+      //console.log(fund)
 
       const name = await instance.methods.name().call()
       const description = await instance.methods.description().call()
