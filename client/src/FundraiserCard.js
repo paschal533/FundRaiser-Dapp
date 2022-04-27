@@ -104,7 +104,7 @@ const FundraiserCard = (props) => {
         FundraiserContract.abi,
         fund
       );
-      //setContract(instance)
+      setContract(instance)
       setAccounts(accounts)
       console.log(fund)
 
