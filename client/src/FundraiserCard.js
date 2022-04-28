@@ -112,7 +112,7 @@ const FundraiserCard = (props) => {
       const description = await instance.methods.description().call()
       const totalDonations = await instance.methods.totalDonations().call()
       const imageURL = await instance.methods.imageURL().call()
-      const url = await instance.methods.url().call()
+      //const url = await instance.methods.url().call()
 
       //const exchangeRate = await cc.price('ETH', ['USD'])
       const exchangeRate =  10
